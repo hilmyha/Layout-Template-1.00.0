@@ -1,0 +1,193 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+header {
+  transition: 0.4s;
+  height: 400px;
+  background-image: url("../../dist/asset/casey-horner-4rDCa5hBlCs-unsplash.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header nav {
+  padding-top: 4%;
+  margin: 0% 10% 0% 10%;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+header nav ul h1 {
+  flex: 2;
+  color: white;
+}
+header nav ul a {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  color: white;
+}
+header nav ul a:hover {
+  transition: 0.5s;
+  color: gray;
+}
+
+article {
+  margin: 4% 10% 0% 10%;
+  display: flex;
+  text-align: justify;
+}
+article section {
+  flex: 2;
+}
+article section .article {
+  color: gray;
+  padding: 16px;
+}
+article section .article p {
+  padding: 16px 0px 0px 0px;
+}
+article aside {
+  flex: 1;
+  background-color: whitesmoke;
+}
+article aside .sidebar {
+  padding: 16px;
+}
+article aside .sidebar ul {
+  padding-left: 0;
+}
+article aside .sidebar ul li {
+  padding: 14px 10px 14px 0px;
+  list-style: none;
+}
+article aside .sidebar ul li a {
+  text-decoration: none;
+  color: black;
+}
+article aside .sidebar ul li a:hover {
+  color: gray;
+}
+article aside .sidebar form {
+  padding: 0px 10px 14px 0px;
+}
+article aside .sidebar form input[type=search], article aside .sidebar form [type=submit] {
+  padding: 5px;
+  border: none;
+}
+article aside .sidebar form input[type=submit] {
+  cursor: pointer;
+  color: white;
+  background-color: cadetblue;
+}
+article aside .sidebar form input[type=submit]:hover {
+  transition: 0.5s;
+  background-color: lightgray;
+  color: black;
+}
+
+footer {
+  background-color: whitesmoke;
+  margin: 0% 10% 0% 10%;
+  padding: 16px;
+}
+footer .our-team {
+  text-align: center;
+  margin-top: 10%;
+}
+footer .our-team p {
+  margin: 16px 0px 16px 0px;
+}
+footer .copyright {
+  margin: 10% 0% 0% 0%;
+}
+footer .copyright .social-media {
+  display: flex;
+}
+footer .copyright .social-media p {
+  padding: 10px 0px 10px 0px;
+}
+footer .copyright .social-media img {
+  padding: 20px 10px 0px 0px;
+}
+
+@media screen and (max-width: 1000px) {
+  article {
+    margin: 0;
+  }
+  article section {
+    order: 1;
+  }
+  article aside {
+    order: 2;
+  }
+
+  footer {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    transition: 0.4s;
+    background-image: none;
+    background-color: yellowgreen;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+  }
+  header nav {
+    padding-bottom: 4%;
+  }
+  header nav h1 {
+    display: none;
+  }
+
+  article {
+    margin: 15% 0% 0% 0%;
+    flex-direction: column;
+  }
+  article section {
+    order: 1;
+  }
+  article aside {
+    order: 2;
+  }
+
+  footer {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 490px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  article {
+    margin: 50% 0% 0% 0%;
+  }
+}
+@media screen and (max-width: 400px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  article {
+    margin: 60% 0% 0% 0%;
+  }
+}
+@media screen and (max-width: 320px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  article {
+    margin: 70% 0% 0% 0%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
